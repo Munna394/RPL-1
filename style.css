@@ -9,11 +9,17 @@
 header .navbar .container-lg a{
     font-family: "Sour Gummy", sans-serif;
 }
+
+/* Carousel Section Start  */
 .banner-section .carousel .carousel-inner .carousel-caption h1{
     font-size: 65px;
 }
 .banner-section .carousel .carousel-inner .carousel-caption h3{
-    font-size: 35px;
+    font-size: 40px;
+}
+.banner-section .carousel .carousel-inner .carousel-caption p{
+    font-size: 18px;
+    color: gainsboro;
 }
 .banner-section .carousel .carousel-inner .carousel-caption .btn-group a{
     padding: 15px 30px;
@@ -37,3 +43,4 @@ header .navbar .container-lg a{
     border: 1px solid transparent;
    
 }
+/* Carousel Section End  */
