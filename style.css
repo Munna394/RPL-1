@@ -44,3 +44,12 @@ header .navbar .container-lg a{
    
 }
 /* Carousel Section End  */
+
+/* Footer Section Start  */
+footer .container .row .contact-area li a{
+    color: rgb(214, 212, 212);
+}
+footer .container .row .contact-area li a:hover{
+    color: #FFC107;
+}
+/* Footer Section End  */
