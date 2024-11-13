@@ -34,7 +34,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active fs-4 fw-medium text-white" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active fs-4 fw-medium text-white" aria-current="page"
+                                href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fs-4 fw-medium text-white" href="about.html">About Us</a>
@@ -81,9 +82,9 @@
                     </div>
                     <div class="col-6">
                         <div class="inner-text text-center text-warning  position-absolute top-50">
-                            <h6 class="fw-bold fs-1 text-white">About US</h6>
+                            <h6 class="fw-bold fs-1 text-white">Contact US</h6>
                             <p class="fw-medium mt-2 fs-4">
-                                <a href="index.html" class="text-decoration-none text-warning">Home</a> / About US
+                                <a href="index.html" class="text-decoration-none text-warning">Home</a> / Contact US
                             </p>
                         </div>
                     </div>
@@ -98,137 +99,179 @@
     <!-- Inner Banner Section End   -->
 
 
-    <!-- Company About Section Start  -->
+    <!-- Contact Section Start   -->
+    <section class="contact-section">
+        <div class="container my-5">
+            <h2 class="text-center mb-4 fs-1 fw-semibold">Contact Us</h2>
 
-    <section class="container py-5">
-        <div class="container pt-5">
-            <div class="row mt-5">
-                <div class="col-sm-12 col-md-6">
-                    <div class="about-img">
-                        <img src="images/Company About.webp" alt="">
+            <form>
+                <div class="row mb-3">
+                    <!-- Name Field -->
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Full Name" required>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email Address" required>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="about-text ms-5">
-                        <h6 class="fs-5 fw-semibold text-success ">About Company</h6>
-                        <h2 class="fw-bold text-dark fs-1">Our Passion for Freshness</h2>
-                        <p>Fruits Company, if considered in a general sense, can refer to a business focused on
-                            producing, selling, or exporting fresh fruits and fruit-related products. Companies in this
-                            industry typically work to provide a variety of fruits, ensuring quality, freshness, and
-                            supply chain efficiency to meet consumer demand. Here’s what such a company usually focuses
-                            on:Fruits Company, if considered in a general sense, can refer to a business focused on
-                            producing, selling, or exporting fresh fruits and fruit-related products. Companies in this
-                            industry typically work to provide a variety of fruits, ensuring quality, freshness, and
-                            supply chain efficiency to meet consumer demand. Here’s what such a company usually focuses
-                            on:</p>
+
+                <div class="row mb-3">
+                    <!-- Phone Field -->
+                    <div class="col-md-12">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number" required>
+                    </div>
+                </div>
+
+                <!-- Message Field -->
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit" class="btn btn-success px-5 py-2 fs-5">Send Message</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <!-- Contact Section End  -->
+
+
+
+
+    <!-- Contact Information Section Start  -->
+    <section class="information-section py-5 bg-light">
+        <div class="container my-5">
+            <h2 class="text-center mb-4 fs-1 fw-semibold mb-5">Contact Information</h2>
+
+            <div class="row text-center">
+                <!-- Phone Number -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body">
+                            <i class="fa-solid fa-mobile-screen-button fs-1 fw-bold mb-3 text-danger "></i>
+                            <h5 class="card-title fs-3 fw-medium">Phone</h5>
+                            <p class="card-text">
+                                <a href="tel:+1234567890"
+                                    class="text-decoration-none text-dark fs-5">+88013-14283039</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email Address -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body">
+                            <i class="fa-solid fa-envelope fs-1 fw-bold mb-3 text-danger"></i>
+                            <h5 class="card-title fs-3 fw-medium">Email</h5>
+                            <p class="card-text">
+                                <a href="mailto:info@example.com"
+                                    class="text-decoration-none text-dark fs-5">info@example.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Physical Address -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body">
+                            <i class="fa-solid fa-address-card fs-1 fw-bold mb-3 text-danger"></i>
+                            <h5 class="card-title fs-3 fw-medium">Address</h5>
+                            <p class="card-text fs-5">Nischintopur, Thakurgaon, Bangladesh</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
-    <!-- Company About Section End  -->
+    <!-- Contact Information Section End  -->
 
 
-    <!-- Team Section Start  -->
-     <section class="team-section bg-ligh py-5">
-        <div class="container pt-5 ">
-            <h2 class="text-center mb-4 fs-2 fw-bold">Meet Our Team</h2>
-            <div class="row text-center">
-                <!-- Team Member 1 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card border-0 shadow">
-                        <img src="images/Teem 1.jpg"
-                            class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px;" alt="Team Member 1">
-                        <div class="card-body">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text text-muted">CEO & Founder</p>
-                        </div>
+
+    <section class="maps-section bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-8">
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d390.16183994230295!2d88.45851342287312!3d26.019616275592664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4c126d2c8ce05%3A0xe552505529f404e9!2sNischintapur%20Jame%20Mosque!5e0!3m2!1sen!2sbd!4v1731504419238!5m2!1sen!2sbd" width="1024" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-    
-                <!-- Team Member 2 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card border-0 shadow">
-                        <img src="images/Team 2.jpg"
-                            class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px;" alt="Team Member 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Jane Smith</h5>
-                            <p class="card-text text-muted">Lead Designer</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Team Member 3 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card border-0 shadow">
-                        <img src="images/Team 3.jpg" class="card-img-top rounded-circle mx-auto mt-3"
-                            style="width: 150px;" alt="Team Member 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Alex Brown</h5>
-                            <p class="card-text text-muted">Head of Development</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Team Member 4 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card border-0 shadow">
-                        <img src="images/Team 4.jpg" class="card-img-top rounded-circle mx-auto mt-3"
-                            style="width: 150px;" alt="Team Member 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Olga García</h5>
-                            <p class="card-text text-muted">Head of Development</p>
-                        </div>
-                    </div>
+                <div class="col-md-2">
+                    
                 </div>
             </div>
         </div>
-     </section>
-    
-    <!-- Team Section End  -->
-
-    <!-- Testimonial Section Start  -->
-    <section class="testimonial-section">
-        <div class="container my-5">
-            <h2 class="text-center mb-4 fs-2 fw-bold">What Our Customers Say</h2>
+        <div class="container py-5">
+            <h2 class="text-center mb-4">Follow Us on Social Media</h2>
+          
             <div class="row text-center">
-              <!-- Review 1 -->
-              <div class="col-md-4 mb-4">
-                <div class="card border-0 shadow">
-                  <div class="card-body">
-                    <p class="card-text">"This company exceeded my expectations! The service was fantastic, and the team was professional."</p>
-                    <h5 class="card-title mt-3">- Sarah Jones</h5>
-                    <p class="text-muted">Verified Customer</p>
+              <!-- Facebook -->
+              <div class="col-md-3 mb-3">
+                <a href="https://facebook.com/yourpage" target="_blank" class="text-decoration-none">
+                  <div class="card border-0 shadow h-100">
+                    <div class="card-body">
+                      <i class="fab fa-facebook fa-2x text-primary"></i>
+                      <h6 class="mt-2">Facebook</h6>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
           
-              <!-- Review 2 -->
-              <div class="col-md-4 mb-4">
-                <div class="card border-0 shadow">
-                  <div class="card-body">
-                    <p class="card-text">"I had a wonderful experience with their support team. Highly recommended for quality and reliability!"</p>
-                    <h5 class="card-title mt-3">- Mark Lee</h5>
-                    <p class="text-muted">Verified Customer</p>
+              <!-- Twitter -->
+              <div class="col-md-3 mb-3">
+                <a href="https://twitter.com/yourpage" target="_blank" class="text-decoration-none">
+                  <div class="card border-0 shadow h-100">
+                    <div class="card-body">
+                      <i class="fab fa-twitter fa-2x text-info"></i>
+                      <h6 class="mt-2">Twitter</h6>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
           
-              <!-- Review 3 -->
-              <div class="col-md-4 mb-4">
-                <div class="card border-0 shadow">
-                  <div class="card-body">
-                    <p class="card-text">"Their attention to detail and dedication to customer satisfaction is unmatched. Will definitely come back!"</p>
-                    <h5 class="card-title mt-3">- Emily Davis</h5>
-                    <p class="text-muted">Verified Customer</p>
+              <!-- Instagram -->
+              <div class="col-md-3 mb-3">
+                <a href="https://instagram.com/yourpage" target="_blank" class="text-decoration-none">
+                  <div class="card border-0 shadow h-100">
+                    <div class="card-body">
+                      <i class="fab fa-instagram fa-2x text-danger"></i>
+                      <h6 class="mt-2">Instagram</h6>
+                    </div>
                   </div>
-                </div>
+                </a>
+              </div>
+          
+              <!-- LinkedIn -->
+              <div class="col-md-3 mb-3">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-decoration-none">
+                  <div class="card border-0 shadow h-100">
+                    <div class="card-body">
+                      <i class="fab fa-linkedin fa-2x text-primary"></i>
+                      <h6 class="mt-2">LinkedIn</h6>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
+          
     </section>
-    <!-- Testimonial Section End  -->
+
+
 
 
 

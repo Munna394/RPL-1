@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery-Web</title>
+
+    <!-- Bootstrap CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Custome Styles Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section Start  -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-success">
+            <div class="container-lg">
+                <a class="navbar-brand fw-bold fs-1 text-warning" href="#">GROCERY-WEB</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4 fw-medium text-white" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 fw-medium text-white" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 fw-medium text-white" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 fw-medium text-white" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <div class="dropdown">
+                            <input type="text" class="form-control" placeholder="Search" id="searchInput"
+                                data-bs-toggle="dropdown" aria-expanded="false" onkeyup="filterSuggestions()">
+                            <ul class="dropdown-menu" aria-labelledby="searchInput" id="suggestionsList">
+                                <li><a class="dropdown-item" href="#">Apple</a></li>
+                                <li><a class="dropdown-item" href="#">Banana</a></li>
+                                <li><a class="dropdown-item" href="#">Cherry</a></li>
+                                <li><a class="dropdown-item" href="#">Date</a></li>
+                                <li><a class="dropdown-item" href="#">Elderberry</a></li>
+                                <li><a class="dropdown-item" href="#">Fig</a></li>
+                                <li><a class="dropdown-item" href="#">Grape</a></li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-warning ms-3" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Section End  -->
+
+
+
+    <!-- Inner Banner Section Start   -->
+
+    <section class="inner-banner">
+        <div class="inner position-relative">
+            <img class="w-100 img-fluid" src="images/inner banner.jpg" alt="Inner Banner">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-5">
+                    </div>
+                    <div class="col-6">
+                        <div class="inner-text text-center text-warning  position-absolute top-50">
+                            <h6 class="fw-bold fs-1 text-white">Product Details</h6>
+                            <p class="fw-medium mt-2 fs-4">
+                                <a href="index.html" class="text-decoration-none text-warning">Home</a> / Products
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Inner Banner Section End   -->
+
+    <!-- Product Categories Section Start  -->
+    <section class="categories-section py-5 bg-light">
+        <div class="container pt-5">
+            <h2 class="text-center mb-4 fs-1 fw-semibold">Our Product Categories</h2>
+            <div class="row text-center pt-3">
+                <!-- Category 1: Fruits -->
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0 shadow pb-2">
+                        <img src="images/Categories 1.jpg" class="card-img-top mx-auto mt-3" style="width: 100px;"
+                            alt="Fruits">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruits</h5>
+                            <p class="card-text text-muted">Fresh and organic fruits fruits sourced sourced daily.</p>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-success px-5 fs-5 fw-medium">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Vegetables -->
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0 shadow pb-2">
+                        <img src="images/Categories 2.jpg" class="card-img-top mx-auto mt-3" style="width: 100px;"
+                            alt="Vegetables">
+                        <div class="card-body">
+                            <h5 class="card-title">Vegetables</h5>
+                            <p class="card-text text-muted">A variety of fresh vegetables for healthy meals.</p>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-success px-5 fs-5 fw-medium">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3: Dairy -->
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0 shadow pb-2">
+                        <img src="images/Categories 3.jpg" class="card-img-top mx-auto mt-3" style="width: 100px;"
+                            alt="Dairy">
+                        <div class="card-body">
+                            <h5 class="card-title">Dairy</h5>
+                            <p class="card-text text-muted">Quality dairy products to meet your daily needs.</p>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-success px-5 fs-5 fw-medium">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 4: Snacks -->
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0 shadow pb-2">
+                        <img src="images/Categories 4.jpg" class="card-img-top mx-auto mt-3" style="width: 100px;"
+                            alt="Snacks">
+                        <div class="card-body">
+                            <h5 class="card-title">Snacks</h5>
+                            <p class="card-text text-muted">A wide range of delicious snacks for every taste.</p>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-success px-5 fs-5 fw-medium">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Categories Section End  -->
+
+
+    <!-- Display All Products Available Section Start  -->
+     <section class="display-product">
+        <div class="container my-5">
+            <h2 class="text-center mb-4 fs-1 fw-semibold">Our Products</h2>
+            <div class="row">
+              <!-- Product 1 -->
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow">
+                  <img src="images/Available Product 1.jpg" class="card-img-top" alt="Product 1">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Fresh Apples</h5>
+                    <p class="card-text text-muted">$5.99 per kg</p>
+                    <p class="card-text">Crisp, juicy, and freshly picked apples.</p>
+                    <a href="#" class="btn btn-success px-5 py-2 fs-5">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Product 2 -->
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow">
+                  <img src="images/Available Product 2.jpg" class="card-img-top" alt="Product 2">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Organic Carrots</h5>
+                    <p class="card-text text-muted">$2.49 per kg</p>
+                    <p class="card-text">Sweet, crunchy carrots, perfect for salads.</p>
+                    <a href="#" class="btn btn-success px-5 py-2 fs-5">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Product 3 -->
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow">
+                  <img src="images/Available Product 3.jpg" class="card-img-top" alt="Product 3">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Greek Yogurt</h5>
+                    <p class="card-text text-muted">$3.99 per tub</p>
+                    <p class="card-text">Rich and creamy yogurt with a smooth texture.</p>
+                    <a href="#" class="btn btn-success px-5 py-2 fs-5">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Product 4 -->
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow">
+                  <img src="images/Available Product 4.jpg" class="card-img-top" alt="Product 4">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Organic Almonds</h5>
+                    <p class="card-text text-muted">$12.99 per kg</p>
+                    <p class="card-text">High-quality almonds, perfect for snacking.</p>
+                    <a href="#" class="btn btn-success px-5 py-2 fs-5">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Product 5 -->
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow">
+                  <img src="images/product 5.jpg" class="card-img-top" alt="Product 5">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Whole Grain Bread</h5>
+                    <p class="card-text text-muted">$4.99 each</p>
+                    <p class="card-text">Soft and fresh whole grain bread loaf.</p>
+                    <a href="#" class="btn btn-success px-5 py-2 fs-5">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Product 6 -->
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow">
+                  <img src="images/product 4.jpg" class="card-img-top" alt="Product 6">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Mixed Berries</h5>
+                    <p class="card-text text-muted">$6.99 per pack</p>
+                    <p class="card-text">A mix of fresh strawberries, blueberries, and raspberries.</p>
+                    <a href="#" class="btn btn-success px-5 py-2 fs-5">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+     </section>
+         <!-- Display All Products Available Section Start  -->
+
+
+         <!-- Filter Or Search Section Start -->
+          <section class="filter-section">
+            <div class="container my-5">
+                <h2 class="text-center mb-4">Filter Products</h2>
+                
+                <!-- Filter Section -->
+                <form>
+                  <div class="row mb-4">
+                    <!-- Category Filter -->
+                    <div class="col-md-4">
+                      <label for="category" class="form-label">Category</label>
+                      <select class="form-control" id="category">
+                        <option>All Categories</option>
+                        <option>Fruits</option>
+                        <option>Vegetables</option>
+                        <option>Dairy</option>
+                        <option>Snacks</option>
+                      </select>
+                    </div>
+              
+                    <!-- Price Filter -->
+                    <div class="col-md-4">
+                      <label for="price" class="form-label">Price Range</label>
+                      <select class="form-control" id="price">
+                        <option>All Prices</option>
+                        <option>Under $5</option>
+                        <option>$5 - $10</option>
+                        <option>$10 - $20</option>
+                        <option>Above $20</option>
+                      </select>
+                    </div>
+              
+                    <!-- Popularity Filter -->
+                    <div class="col-md-4">
+                      <label for="popularity" class="form-label">Popularity</label>
+                      <select class="form-control" id="popularity">
+                        <option>All</option>
+                        <option>Most Popular</option>
+                        <option>Top Rated</option>
+                        <option>Best Sellers</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-success px-5 py-2 fs-5">Apply Filters</button>
+                </form>
+              
+                <!-- Product Grid -->
+                <div class="row mt-5">
+                  <!-- Sample Product 1 -->
+                  <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow">
+                      <img src="images/Availabel product 6.jpg" class="card-img-top" alt="Product 1">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Fresh Apples</h5>
+                        <p class="card-text text-muted">$5.99 per kg</p>
+                        <p class="card-text">Crisp, juicy, and freshly picked apples.</p>
+                        <a href="#" class="btn btn-warning px-5 py-2 fs-5">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Add more products as necessary with similar structure -->
+                </div>
+              </div>
+          </section>
+         <!-- Filter Or Search Section End -->
+
+
+
+    <!-- Footer Section Start  -->
+    <footer class="footer-section bg-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4">
+                    <div class="logo-area">
+                        <a class="navbar-brand fw-bold fs-1 text-warning" href="#">GROCERY-WEB</a>
+                        <p class="text-light mt-4">This setup will create a visually appealing Special Offers &
+                            Discounts section, responsive on all screen sizes, This setup will create a visually
+                            appealing Special Offers & Discounts section, responsive on all screen sizes</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="contact-area ms-md-5">
+                        <h2 class="text-white fs-1 fw-semibold mb-4">Quick Links</h2>
+                        <ul type="none">
+                            <li><a class="text-decoration-none fs-5" href="#">Home</a></li>
+                            <li><a class="text-decoration-none fs-5" href="#">About Us</a></li>
+                            <li><a class="text-decoration-none fs-5" href="#">Product</a></li>
+                            <li><a class="text-decoration-none fs-5" href="#">Contact</a></li>
+                            <li><a class="text-decoration-none fs-5" href="#">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="address-area">
+                        <h2 class="text-white fs-1 fw-semibold mb-4">Contact</h2>
+                        <div class="contact-item">
+                            <a class="text-decoration-none text-white fs-5" href="#"><i
+                                    class="fa-solid fa-location-dot me-3 text-success"></i>Address: Nischintopur,
+                                Thakurgaon</a>
+                        </div>
+                        <div class="contaact-item">
+                            <a class="text-decoration-none text-white fs-5" href="tell:+8801314283039"><i
+                                    class="fa-solid fa-phone me-3 text-success"></i>Phone: +8801314283039</a>
+                        </div>
+                        <div class="contaact-item">
+                            <a class="text-decoration-none text-white fs-5" href="mailto:example@gmail.com"><i
+                                    class="fa-solid fa-envelope me-3 text-success"></i>Email: example@gmail.com</a>
+                        </div>
+                        <div class="contaact-item">
+                            <a class="text-decoration-none text-white fs-5" href="https://munna.code-learnerbd.com/"><i
+                                    class="fa-solid fa-globe me-3 text-success"></i>Website:
+                                munna.code-learnerbd.com</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer Section End -->
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function filterSuggestions() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const dropdown = new bootstrap.Dropdown(input);
+            const listItems = document.querySelectorAll('#suggestionsList li');
+
+            let hasResults = false;
+
+            listItems.forEach(item => {
+                const text = item.textContent || item.innerText;
+                if (text.toLowerCase().indexOf(filter) > -1) {
+                    item.style.display = "";
+                    hasResults = true;
+                } else {
+                    item.style.display = "none";
+                }
+            });
+
+
+            if (hasResults) {
+                dropdown.show();
+            } else {
+                dropdown.hide();
+            }
+        }
+    </script>
+
+</body>
+
+</html>
